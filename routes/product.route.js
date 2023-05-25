@@ -18,7 +18,6 @@ productRoute.route('/create').post((request, response, next) => {
 
 // Get All Products
 productRoute.route('/user/:user_id').get((request, response) => {
-  console.log("request: ", request.params);
   Product.find({user_id: request.params.user_id }).then((data) => {
     response.json(data);
   })
