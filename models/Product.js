@@ -14,6 +14,9 @@ let Product = new Schema({
    },
    image: {
       type: String
+   },
+   user_id: {
+      type: String
    }
 }, {
    collection: 'products'
