@@ -9,7 +9,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const dbConfig = require('./database/db');
+const dbConfig = require('../database/db');
 
 // Connecting with mongo db
 mongoose.Promise = global.Promise;
